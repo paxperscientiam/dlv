@@ -6,9 +6,8 @@
     "browser": "dist/dlv.umd.js",
     "module": "dist/dlv.es.js",
     "scripts": {
-        "dev": "microbundle watch",
-        "build": "microbundle",
-        "prepublish": "\npm run build",
+        "dev": "node_modules/microbundle/dist/cli.js --modern watch",
+        "build": "node_modules/microbundle/dist/cli.js --modern",
         "test": "ts-node test",
         "test:syntax": "tsc --noEmit index.ts",
         "test:lint": "tslint index.ts"
