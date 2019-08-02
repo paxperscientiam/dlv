@@ -1,6 +1,6 @@
 {
     "name": "@paxperscientiam/dlv.ts",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "Safely get a dot-notated property within an object.",
     "main": "dist/dlv.js",
     "browser": "dist/dlv.umd.js",
