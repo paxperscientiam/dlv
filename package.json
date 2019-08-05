@@ -1,7 +1,7 @@
 {
     "name": "@paxperscientiam/dlv.ts",
     "homepage": "https://github.com/paxperscientiam/dlv.ts",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Safely get a dot-notated property within an object.",
     "main": "dist/dlv.js",
     "types": "dist/index.d.ts",

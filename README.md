@@ -1,5 +1,5 @@
 ### Fork notice
-This fork is a TypeScript implementation of [dlv](https://github.com/developit/dlv).
+This fork is a TypeScript implementation of [dlv](https://github.com/developit/dlv). Some remarks in this readme may no longer apply.
 
 
 # `dlv(obj, keypath)`
@@ -11,7 +11,7 @@ This fork is a TypeScript implementation of [dlv](https://github.com/developit/d
 
 ### Why?
 
-Smallest possible implementation: only **130 bytes.**
+~~Smallest possible implementation: only **130 bytes.**~~
 
 You could write this yourself, but then you'd have to write [tests].
 
@@ -20,7 +20,11 @@ Supports ES Modules, CommonJS and globals.
 
 ### Installation
 
-`npm install --save dlv`
+`pnpm i @paxperscientiam/dlv.ts`
+or ...
+`npm i @paxperscientiam/dlv.ts`
+or ...
+`yarn add @paxperscientiam/dlv.ts`
 
 
 ### Usage
@@ -30,7 +34,7 @@ Available as `dlvTs` from `dist/dlv.umd.js`.
 `delve(object, keypath, [default])`
 
 ```js
-import delve from 'dlv';
+import delve from '@paxperscientiam/dlv.ts';
 
 let obj = {
 	a: {
