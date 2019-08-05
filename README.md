@@ -22,6 +22,8 @@ Supports ES Modules, CommonJS and globals.
 
 
 ### Usage
+Available as `dlvTs` from `dist/dlv.umd.js`.
+
 
 `delve(object, keypath, [default])`
 
