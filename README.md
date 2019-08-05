@@ -7,13 +7,12 @@ This fork is a TypeScript implementation of [dlv](https://github.com/developit/d
 ![Travis (.org)](https://img.shields.io/travis/paxperscientiam/dlv.ts?style=for-the-badge)
 
 > Safely get a dot-notated path within a nested object, with ability to return a default if the full key path does not exist or the value is undefined
+git open
 
 
 ### Why?
 
-~~Smallest possible implementation: only **130 bytes.**~~
-
-You could write this yourself, but then you'd have to write [tests].
+Only **130 bytes.**
 
 Supports ES Modules, CommonJS and globals.
 
