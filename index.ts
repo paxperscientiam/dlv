@@ -1,8 +1,7 @@
-export default function dlv(obj: object, key: string|string[], def?: any, p?: number): any {
-    p = 0
-    key = (key as string).split ? (key as string).split(".") : (key as string[])
-    while (obj && p < key.length) {
-        obj = obj[key[p++]]
+export default function dlv(obj: object, key: string|string[], def?: any, p: number = 0): any {
+    const accessor = (key as string).split ? (key as string).split(".") : (key as string[])
+    while (obj && p < accessor.length) {
+        obj = obj[accessor[p++]]
     }
-    return (obj === undefined || p < key.length) ? def : obj
+    return (obj === undefined || p < accessor.length) ? def : obj
 }
