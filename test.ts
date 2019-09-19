@@ -1,6 +1,8 @@
 const assert = require("assert")
 import delve from "./index"
 
+delve({ x: 3, z: 6 }, "z")
+
 let obj = {
     undef: undefined,
     zero: 0,
