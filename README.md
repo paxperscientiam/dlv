@@ -63,10 +63,6 @@ delve(obj, 'a.b.c.d', 'foo') === 'foo';
 //Non-truthy defined values are still returned if they exist at the full keypath
 delve(obj, 'a.b.c.e', 'foo') === null;
 
-//undefined obj or key returns undefined, unless a default is supplied
-delve(undefined, 'a.b.c') === undefined;
-delve(undefined, 'a.b.c', 'foo') === 'foo';
-delve(obj, undefined, 'foo') === 'foo';
 ```
 
 
