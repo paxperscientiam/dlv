@@ -3,22 +3,20 @@
 	"homepage": "https://github.com/paxperscientiam/dlv.ts",
 	"version": "1.2.5",
 	"description": "Safely get a dot-notated property within an object.",
-	"main": "dist/dlv.js",
-	"types": "dist/index.d.ts",
-	"browser": "dist/dlv.umd.js",
-	"module": "dist/dlv.es.js",
+	"main": "./lib/cjs/index.js",
+	"module": "./lib/esm/index.js",
+	"source": "./index.ts",
 	"scripts": {
-		"dev": "node_modules/microbundle/dist/cli.js --modern watch",
-		"build": "node_modules/microbundle/dist/cli.js --modern",
-		"test": "node_modules/ts-node/dist/bin.js test.ts",
-		"test:syntax": "tsc --noEmit index.ts",
-		"test:lint": "tslint index.ts",
-		"prepublish": "pnpm run build"
+		"prepublishOnly": "npm run start",
+		"clean": "command rm -rf ./lib/*",
+		"tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+		"start": "npm run clean && npm run tsc"
 	},
 	"keywords": [
 		"delve",
 		"dot notation",
-		"dot"
+		"dot",
+		"typescript"
 	],
 	"files": [
 		"index.ts",
@@ -40,7 +38,7 @@
 		"@types/node": "^12.6.9",
 		"microbundle": "^0.7.0",
 		"ts-node": "^8.3.0",
-		"typescript": "^3.5.3"
+		"typescript": "^3.9.7"
 	},
 	"publishConfig": {
 		"access": "public"
