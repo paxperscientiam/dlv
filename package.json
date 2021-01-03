@@ -1,7 +1,7 @@
 {
 	"name": "@paxperscientiam/dlv.ts",
 	"homepage": "https://github.com/paxperscientiam/dlv.ts",
-	"version": "1.2.5",
+	"version": "1.3.0",
 	"description": "Safely get a dot-notated property within an object.",
 	"main": "./lib/cjs/index.js",
 	"module": "./lib/esm/index.js",
@@ -36,7 +36,6 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^12.6.9",
-		"microbundle": "^0.7.0",
 		"ts-node": "^8.3.0",
 		"typescript": "^3.9.7"
 	},
